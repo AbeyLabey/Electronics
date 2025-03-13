@@ -93,7 +93,7 @@ body {
     z-index: 10;
 }
 
-.flashcard, #showFlashcardButton{
+.flashcard{
     width: 60px;
     height: 60px;
     background-color: #F5F5DC;
