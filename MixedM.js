@@ -4,9 +4,9 @@ async function getRandomMessage() {
     try {
         // Fetch all JSON files
         const [data1, data2, data3] = await Promise.all([
-            fetch("https://abeylabey.github.io/flashcard/Bank1.json").then(res => res.json()),
-            fetch("https://abeylabey.github.io/flashcard/Bank2.json").then(res => res.json()),
-            fetch("https://abeylabey.github.io/flashcard/Bank3.json").then(res => res.json())
+            fetch("https://abeylabey.github.io/Electronics/Bank1.json").then(res => res.json()),
+            fetch("https://abeylabey.github.io/Electronics/Bank2.json").then(res => res.json()),
+            fetch("https://abeylabey.github.io/Electronics/Bank3.json").then(res => res.json())
         ]);
 
         // Pick a random index
