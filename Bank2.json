@@ -1,0 +1,19 @@
+{
+  "questions": [
+    "What are z (impedance) parameters of an electrical network?",
+    "What is a two-port network?",
+    "explain the difference between open and short circuit parameters?",
+    "What is the Voltage Standing Wave Ratio (VSWR)?",
+    "Explain h (hybrid) parameters",
+    "Explain y (admittance) parameters",
+    "Explain s (scattering) parameters",
+    "Explain g (inverse hybrid) parameters",
+    "Explain ABCD (Transmission) parameters",
+    "Explain T (scattering transfer) parameters"
+  ],
+  "answers": [
+    "HTML is the standard language for web pages.",
+    "CSS is used to style web pages.",
+    "A web browser is used to access web pages."
+  ]
+}

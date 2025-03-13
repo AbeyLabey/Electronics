@@ -1,0 +1,13 @@
+{
+  "questions": [
+    "What is Single Stub Matching?",
+    "What equations are used in Single Stub Matching?",
+    "What is impedance matching?",
+    "Why do we use parallel lines more often than series lines in single stub matching?"
+  ],
+  "answers": [
+    "Node.js is a JavaScript runtime.",
+    "Express is a Node.js web framework.",
+    "JavaScript is a programming language."
+  ]
+}

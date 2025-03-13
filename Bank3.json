@@ -1,0 +1,18 @@
+{
+  "questions": [
+    "Explain Impedance?",
+    "Explain Admittance?",
+    "Explain Reactance?",
+    "Explain Susceptance?",
+    "Explain Resistance?",
+    "Explain Capacitance?",
+    "Explain Inductance?",
+    "Explain what a electrical field is?",
+    "Explain what a magnetic field is?"
+  ],
+  "answers": [
+    "Git is a version control system.",
+    "GitHub is a platform for hosting Git repositories.",
+    "A commit is a snapshot of changes in a repository."
+  ]
+}
