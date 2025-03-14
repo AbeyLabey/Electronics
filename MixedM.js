@@ -33,6 +33,7 @@ async function getRandomMessage() {
 
 // Function to create and display the flashcard
 function createFlashcardElement(card) {
+    document.getElementById(".flashcardContainer").innerHTML = "";
     let flashcardContainer = document.querySelector(".flashcardContainer");
     
     let flashcard = document.createElement("div");
@@ -61,7 +62,6 @@ function createFlashcardElement(card) {
     flashcard.appendChild(questionList);
     flashcard.appendChild(toggleButton);
     flashcard.appendChild(answerList);
-    document.getElementById(".flashcardContainer").innerHTML = "";
     flashcardContainer.appendChild(flashcard);
 }
 
