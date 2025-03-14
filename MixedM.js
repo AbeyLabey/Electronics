@@ -84,6 +84,7 @@ let Back = () => {
     document.querySelector(".flashcardContainer").innerHTML = "";
     let flashcardContainer = document.querySelector(".flashcardContainer");
     flashcardContainer.appendChild(flashcards[indexCount - 1]);
+    indexCount = indexCount - 1;
 }
 }
 // Ensure the DOM is loaded before running the script
