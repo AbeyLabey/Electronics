@@ -61,13 +61,13 @@ function createFlashcardElement(card) {
     flashcard.appendChild(questionList);
     flashcard.appendChild(toggleButton);
     flashcard.appendChild(answerList);
+    document.getElementById("flashcardContainer").innerHTML = "";
     flashcardContainer.appendChild(flashcard);
 }
 
 // Ensure the DOM is loaded before running the script
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("showFlashcardButton").addEventListener("click", async function() {
-        document.getElementById("flashcardContainer").innerHTML = "";
         let newCard = await getRandomMessage();
         createFlashcardElement(newCard);
     });
