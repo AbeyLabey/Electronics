@@ -107,7 +107,7 @@ body {
     font-size:8px;
 }
 
-.questionList{
+.questionC{
     width: 60px;
     height: 60px;
     background-color: #F5F5DC;
@@ -121,7 +121,7 @@ body {
     font-size:8px;
 }
 
-.answerList{
+.answerC{
     width: 60px;
     height: 60px;
     background-color: #F5F5DC;

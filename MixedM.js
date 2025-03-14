@@ -39,7 +39,7 @@ function createFlashcardElement(card) {
     flashcard.classList.add("flashcard");
 
     let questionList = document.createElement("ul");
-    questionsList.classList.add("questionC");
+    questionList.classList.add("questionC");
     card.questions.forEach(question => {
         let li = document.createElement("li");
         li.textContent = question;
@@ -47,7 +47,7 @@ function createFlashcardElement(card) {
     });
 
     let answerList = document.createElement("ul");
-    answersList.classList.add("answerC");
+    answerList.classList.add("answerC");
     card.answers.forEach(answer => {
         let li = document.createElement("li");
         li.textContent = answer;
