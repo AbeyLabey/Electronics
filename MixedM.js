@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
         createFlashcardElement(newCard);
         showNewFlashcard(); 
     });
-    document.getElementById("nextCardButton").addEventListener("click", async function() {
+    document.getElementById("forwardButton").addEventListener("click", async function() {
         Next();
 
     });
