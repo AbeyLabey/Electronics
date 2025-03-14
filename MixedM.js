@@ -67,6 +67,7 @@ function createFlashcardElement(card) {
 // Ensure the DOM is loaded before running the script
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("showFlashcardButton").addEventListener("click", async function() {
+        document.getElementById("showFlashcardButton").innerHTML = "";
         let newCard = await getRandomMessage();
         createFlashcardElement(newCard);
     });
