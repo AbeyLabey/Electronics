@@ -76,6 +76,7 @@ let Next = () => {
     document.querySelector(".flashcardContainer").innerHTML = "";
     let flashcardContainer = document.querySelector(".flashcardContainer");
     flashcardContainer.appendChild(flashcards[indexCount + 1]);
+    indexCount = indexCount + 1;
 }
 }
 
