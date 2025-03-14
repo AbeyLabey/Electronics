@@ -61,7 +61,7 @@ function createFlashcardElement(card) {
     flashcard.appendChild(questionList);
     flashcard.appendChild(toggleButton);
     flashcard.appendChild(answerList);
-    document.getElementById("flashcardContainer").innerHTML = "";
+    document.getElementById(".flashcardContainer").innerHTML = "";
     flashcardContainer.appendChild(flashcard);
 }
 
