@@ -33,7 +33,7 @@ async function getRandomMessage() {
 
 // Function to create and display the flashcard
 function createFlashcardElement(card) {
-    document.getElementById(".flashcardContainer").innerHTML = "";
+    document.querySelector(".flashcardContainer").innerHTML = "";
     let flashcardContainer = document.querySelector(".flashcardContainer");
     
     let flashcard = document.createElement("div");
