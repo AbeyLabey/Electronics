@@ -39,6 +39,7 @@ function createFlashcardElement(card) {
     flashcard.classList.add("flashcard");
 
     let questionList = document.createElement("ul");
+    questions.classList.add("questionC");
     card.questions.forEach(question => {
         let li = document.createElement("li");
         li.textContent = question;
@@ -46,6 +47,7 @@ function createFlashcardElement(card) {
     });
 
     let answerList = document.createElement("ul");
+    answers.classList.add("answerC");
     card.answers.forEach(answer => {
         let li = document.createElement("li");
         li.textContent = answer;
@@ -53,6 +55,7 @@ function createFlashcardElement(card) {
     });
 
     let toggleButton = document.createElement("button");
+    toggleButton.classList.add("toggle")
     toggleButton.textContent = "Show/Hide Answers";
     toggleButton.addEventListener("click", function () {
         answerList.classList.toggle("hidden");
@@ -74,21 +77,20 @@ let showNewFlashcard = () => {
 }
 let Next = () => {
     if(indexCount < flashcards.length-1){
+    indexCount = indexCount + 1;
     document.querySelector(".flashcardContainer").innerHTML = "";
     let flashcardContainer = document.querySelector(".flashcardContainer");
     flashcardContainer.appendChild(flashcards[indexCount + 1]);
-    indexCount = indexCount + 1;
     console.log(flashcards)
 }
 }
 
 let Back = () => {
     if(indexCount > 0){
+    indexCount = indexCount - 1;
     document.querySelector(".flashcardContainer").innerHTML = "";
     let flashcardContainer = document.querySelector(".flashcardContainer");
     flashcardContainer.appendChild(flashcards[indexCount - 1]);
-    indexCount = indexCount - 1;
-    console.log(flashcards)
 }
 }
 // Ensure the DOM is loaded before running the script
