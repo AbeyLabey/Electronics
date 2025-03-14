@@ -62,6 +62,7 @@ function createFlashcardElement(card) {
     flashcard.appendChild(toggleButton);
     flashcard.appendChild(answerList);
     flashcards.push(flashcard);
+    console.log(flashcards)
 }
 let indexCount = 0;
 let showNewFlashcard = () => {
@@ -69,7 +70,7 @@ let showNewFlashcard = () => {
     indexCount = flashcards.length-1;
     let flashcardContainer = document.querySelector(".flashcardContainer");
     flashcardContainer.appendChild(flashcards[indexCount]);
-
+    console.log(flashcards)
 }
 let Next = () => {
     if(indexCount < flashcards.length-1){
@@ -77,6 +78,7 @@ let Next = () => {
     let flashcardContainer = document.querySelector(".flashcardContainer");
     flashcardContainer.appendChild(flashcards[indexCount + 1]);
     indexCount = indexCount + 1;
+    console.log(flashcards)
 }
 }
 
@@ -86,6 +88,7 @@ let Back = () => {
     let flashcardContainer = document.querySelector(".flashcardContainer");
     flashcardContainer.appendChild(flashcards[indexCount - 1]);
     indexCount = indexCount - 1;
+    console.log(flashcards)
 }
 }
 // Ensure the DOM is loaded before running the script
