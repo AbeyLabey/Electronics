@@ -32,9 +32,8 @@ async function getRandomMessage() {
 }
 
 // Function to create and display the flashcard
+let flashcards = [];
 function createFlashcardElement(card) {
-    document.querySelector(".flashcardContainer").innerHTML = "";
-    let flashcardContainer = document.querySelector(".flashcardContainer");
     
     let flashcard = document.createElement("div");
     flashcard.classList.add("flashcard");
@@ -62,14 +61,45 @@ function createFlashcardElement(card) {
     flashcard.appendChild(questionList);
     flashcard.appendChild(toggleButton);
     flashcard.appendChild(answerList);
-    flashcardContainer.appendChild(flashcard);
+    flashcards.push(flashcard);
+}
+let indexCount = 0;
+let showNewFlashcard = () => {
+    document.querySelector(".flashcardContainer").innerHTML = "";
+    indexCount = flashcards.length-1;
+    let flashcardContainer = document.querySelector(".flashcardContainer");
+    flashcardContainer.appendChild(flashcards[indexCount]);
+
+}
+let Next = () => {
+    if(indexCount < flashcards.length-1){
+    document.querySelector(".flashcardContainer").innerHTML = "";
+    let flashcardContainer = document.querySelector(".flashcardContainer");
+    flashcardContainer.appendChild(flashcards[indexCount + 1]);
+}
 }
 
+let Back = () => {
+    if(indexCount > 0){
+    document.querySelector(".flashcardContainer").innerHTML = "";
+    let flashcardContainer = document.querySelector(".flashcardContainer");
+    flashcardContainer.appendChild(flashcards[indexCount - 1]);
+}
+}
 // Ensure the DOM is loaded before running the script
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("showFlashcardButton").addEventListener("click", async function() {
         let newCard = await getRandomMessage();
         createFlashcardElement(newCard);
+        showNewFlashcard(); 
+    });
+    document.getElementById("nextCardButton").addEventListener("click", async function() {
+        Next();
+
+    });
+    document.getElementById("backButton").addEventListener("click", async function() {
+        Back();
+
     });
 });
 console.error()
