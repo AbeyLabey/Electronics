@@ -52,13 +52,14 @@ function createFlashcardElement(card) {
         let li = document.createElement("li");
         li.textContent = answer;
         answerList.appendChild(li);
+        answerList.style.visibility = 'hidden';
     });
 
     let toggleButton = document.createElement("button");
     toggleButton.classList.add("toggle")
     toggleButton.textContent = "Show/Hide Answers";
     toggleButton.addEventListener("click", function () {
-        answerList.classList.toggle("hidden");
+        answerList.style.visibility = (answerList.style.visibility === "hidden") ? "visible" : "hidden";
     });
 
     flashcard.appendChild(questionList);
